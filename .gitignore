@@ -43,7 +43,6 @@ app.*.map.json
 /android/app/release
 
 # Exclude everything in the lib/Services/ folder
-/lib/Services/*
 
 # But don't ignore this specific file
-!lib/Services/acess_firebase_token.dart
+lib/Services/acess_firebase_token.dart*

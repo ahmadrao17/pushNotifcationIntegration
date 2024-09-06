@@ -13,28 +13,17 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   tz.initializeTimeZones();
-  // NotificationApi.init();
-
-  // await Firebase.initializeApp(
-  //   options: DefaultFirebaseOptions.currentPlatform,
-  // );
-  // FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackground);
-  // tz.initializeTimeZones();
   runApp(const MyApp());
-  // await NotificationServices.init();
 }
 
 @pragma('vm:entry-point')
 Future<void> _firebaseMessagingBackground(RemoteMessage message) async {
-// print("back ground noti:::: ${message.notification!.title}");
   await Firebase.initializeApp();
 }
 
-// //await NotificationServices.init();
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

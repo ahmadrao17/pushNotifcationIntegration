@@ -25,15 +25,6 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
   }
 
-  // onDidReceiveNotificationResponse(NotificationResponse message) async {
-  //   // Navigator.push(
-  //   //     _context,
-  //   //     MaterialPageRoute(
-  //   //         builder: (context) => SecondPage(
-  //   //               payload: message.payload,
-  //   //               path: path,
-  //   //             )));
-  // }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -182,15 +173,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     notificationServices.printPendingNotifications();
                   },
                   child: Text("Pending Notification"),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    notificationServices.groupNotification();
-                  },
-                  child: Text("Group Notification"),
                 ),
                 SizedBox(
                   height: 20,
